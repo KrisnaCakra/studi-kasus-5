@@ -35,3 +35,22 @@ void mhs::input(){
 			cout << "---------------------------------------"<<endl;
 		}
 }
+
+int mhs::rekursif(int j, int i){
+	if(i < 0){
+		return i;
+	}
+	else{
+		jml_sks += b[i];
+		total   += hsks * b[i];
+		return rekursif(j, (i-1));
+	}
+}
+
+void mhs::proses() {
+	int j = 1;
+	i--;
+	rekursif(j,i);
+	diskon1   = total * 0.25;
+	total_biaya1 = total - diskon1;
+}
