@@ -1,0 +1,12 @@
+
+
+=======================================
+||   HASIL DARI PERHITUNGAN REKURSIF ||
+=======================================
+Nama   	                  : krisna
+NIM                       : 2100018449
+Jumlah SKS                : 5
+Banyak Mata Kuliah        : 2
+Pembayaran Awal Kuliah    : 750000
+Total Pembayaran (Diskon) : 562500
+=======================================

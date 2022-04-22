@@ -1,3 +1,10 @@
+/*
+KELOMPOK STORMI :
+KRISNA CAKRA NINGRAT (449)
+ANELA INDRA (454)
+SASQIA AULIA NUR AINI (456)
+*/
+
 #include <iostream>
 #include <iomanip>
 #include <fstream>
@@ -53,4 +60,27 @@ void mhs::proses() {
 	rekursif(j,i);
 	diskon1   = total * 0.25;
 	total_biaya1 = total - diskon1;
+}
+
+void mhs::output(){
+	ofstream pos;
+    pos.open("SKS REKURSIF.txt", ios::out);
+	pos << "\n\n=======================================" << endl;
+	pos << "||   HASIL DARI PERHITUNGAN REKURSIF ||" << endl;
+	pos << "=======================================" << endl;
+	pos << "Nama   	                  : " << nama << endl;
+	pos << "NIM                       : " << nim << endl;
+	pos << "Jumlah SKS                : " << jml_sks << endl;
+	pos << "Banyak Mata Kuliah        : " << mata << endl;
+	pos << "Pembayaran Awal Kuliah    : " << total << endl;
+	pos << "Total Pembayaran (Diskon) : " << total_biaya1 << endl;
+	pos << "=======================================" << endl;
+	pos.close();
+}
+
+int main() {
+	mhs a;
+	a.input();
+	a.proses();
+	a.output();
 }
